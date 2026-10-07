@@ -11,12 +11,18 @@
 
  <!-- Navigation (Removed the separate About link) -->
     <nav>
-        <ul class="nav-links">
-            <li><a href="#" onclick="showPage('home')">Home</a></li>
-            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-            <li><a href="#" onclick="showPage('experience')">Experience</a></li>
-            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-        </ul>
+    <ul class="nav-links" style="align-items: center;">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+        <li><a href="#" onclick="showPage('experience')">Experience</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+    <!-- Download Resume Button -->
+        <li>
+            <a href="Bernard_Eickman_Resume.pdf" download class="badge" style="background-color: var(--accent-color); color: white; border: none; text-decoration: none; cursor: pointer;">
+                Download Resume
+            </a>
+        </li>
+    </ul>
     </nav>
 
     <!-- Combined Home & About Page -->
@@ -59,14 +65,13 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                 <!-- Card 1 - Now all are structured identically -->
                 <div class="bento-card">
                     <div class="card-text">
-                        <h3>CAMP 2.0 Photonics Database</h3>
-                        <p>When my school began building a new photonics lab, I was recruited alongside a group of peers to provide the student perspective. Swipe through the presentation below to explore the education pipeline and reservation system I developed to give teachers easy, streamlined access to the new facility.</p>
-                    </div>
-                    
-                    <!-- Raw Canva embed, now nested within the card padding -->
-                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAHHgRrhlEo/2GsSYPFcMbH0nh5knYPIbQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-                    </div>
+                        <h3>Dosser Center for Manufacturing</h3>
+                            <p>Originally conceptualized as the CAMP 2.0 database, I helped develop the reservation system and educational pipeline for what is now officially the Larry R and Elaine A Dosser Center for Manufacturing Sciences.</p>
+                    <!-- News Article Badge -->
+                    <a href="https://www.wdtn.com/news/local-news/dayton-regional-stem-schools-announces-campus-expansion/" target="_blank" style="display: inline-block; margin-top: 10px; padding: 6px 12px; background-color: var(--accent-color); color: white; border-radius: 15px; text-decoration: none; font-size: 0.85rem; font-weight: 600;">
+                       📰 Read the Dayton News Feature
+                     </a>
+</div>
                 </div>
 <!-- Small Card 1 (Solvita Job Shadow) -->
                 <div class="bento-card">
@@ -105,7 +110,7 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                 <div class="card-text">
                     <h3>Designing a Ferris Wheel</h3>
                     <p>This was a group project where we were tasked with creating our own Ferris wheel which had the ability to rotate. We utilized a laser cutter to create the acrylic side pieces and we soldered a small circuit to create the battery-operated motor. This Ferris wheel won first place.</p>
-                    <img src="" alt="Ferris Wheel" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
+                    <img src="FerrisWheel.jpeg" alt="Ferris Wheel" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
                 </div>
             </div>
 
@@ -135,6 +140,11 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                     <h4>University of Cincinnati</h4>
                     <p>Biomedical Engineering | August 2026 - Present</p>
                     <p class="timeline-detail">Pursuing an accelerated 4-year curriculum</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Animal Care Team Volunteer - Reptiles</h4>
+                    <p>Newport Aquarium (WAVE Foundation) | Oct 2026 - Present</p>
+                    <p class="timeline-detail">Ensure strict adherence to biological safety protocols, standard operating procedures (SOPs), and exhibit guidelines while educating diverse crowds on reptilian conservation.</p>
                 </div>
                 <div class="timeline-item">
                     <h4>Certified Trainer</h4>

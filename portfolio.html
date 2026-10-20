@@ -9,14 +9,20 @@
 </head>
 <body>
 
- <!-- Navigation (Removed the separate About link) -->
+ <!-- Navigation -->
     <nav>
-        <ul class="nav-links">
-            <li><a href="#" onclick="showPage('home')">Home</a></li>
-            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-            <li><a href="#" onclick="showPage('experience')">Experience</a></li>
-            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-        </ul>
+    <ul class="nav-links" style="align-items: center;">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+        <li><a href="#" onclick="showPage('experience')">Experience</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+    <!-- Download Resume Button -->
+        <li>
+            <a href="Bernard_Eickman_Resume.pdf" download class="badge" style="background-color: var(--accent-color); color: white; border: none; text-decoration: none; cursor: pointer;">
+                Download Resume
+            </a>
+        </li>
+    </ul>
     </nav>
 
     <!-- Combined Home & About Page -->
@@ -35,11 +41,10 @@
                 <!-- Left Side: Bio -->
                 <div class="about-text">
     <p class="bio">
-Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incoming biomedical engineering student at the University of Cincinnati. Throughout this portfolio you can learn about my professional experiences, the projects I am working on, and the previous projects I’ve completed.     </p>
+Hello and welcome to my portfolio. My name is Bernard Eickman, and I am a biomedical engineering student at the University of Cincinnati. Throughout this portfolio you can learn about my professional experiences, the projects I am working on, and the previous projects I’ve completed.     </p>
     
     <p class="bio">
-<br>I graduated from the Dayton Regional STEM School, where I completed the engineering and Chinese pathways. I took a total of 54 credit hours through Sinclair Community College and Wright State University doing dual enrollment. I have a passion of creating useful and relative solutions to any problems I face. I hope to utilize the skills I’ve learned, and am continuing to build, to be apart of medical innovation.     </p>
-
+<br>I graduated from the Dayton Regional STEM School, where I completed the engineering and Chinese pathways. I took a total of 44 credit hours through Sinclair Community College and Wright State University doing dual enrollment. I have a passion for creating useful and relevant solutions to any problems I face. I hope to utilize the skills I’ve learned, and am continuing to build, to be a part of medical innovation.     </p>
 
 </div>
                 <!-- Right Side: Image -->
@@ -56,33 +61,32 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
         <div class="content-container">
             <h2>Featured Projects</h2>
             <div class="bento-grid">
-                <!-- Card 1 - Now all are structured identically -->
+                <!-- Card 1 -->
                 <div class="bento-card">
                     <div class="card-text">
-                        <h3>CAMP 2.0 Photonics Database</h3>
-                        <p>When my school began building a new photonics lab, I was recruited alongside a group of peers to provide the student perspective. Swipe through the presentation below to explore the education pipeline and reservation system I developed to give teachers easy, streamlined access to the new facility.</p>
-                    </div>
-                    
-                    <!-- Raw Canva embed, now nested within the card padding -->
-                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAHHgRrhlEo/2GsSYPFcMbH0nh5knYPIbQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-                    </div>
+                        <h3>Dosser Center for Manufacturing</h3>
+                            <p>Originally conceptualized as the CAMP 2.0 database, I helped develop the reservation system and educational pipeline for what is now officially the Larry R and Elaine A Dosser Center for Manufacturing Sciences. This project was submitted as a part of my LSS Green Belt certification.</p>
+                    <!-- News Article Badge -->
+                    <a href="https://www.wdtn.com/news/local-news/dayton-regional-stem-schools-announces-campus-expansion/" target="_blank" style="display: inline-block; margin-top: 10px; padding: 6px 12px; background-color: var(--accent-color); color: white; border-radius: 15px; text-decoration: none; font-size: 0.85rem; font-weight: 600;">
+                         📰 Read the Dayton News Feature
+                     </a>
+</div>
                 </div>
 <!-- Small Card 1 (Solvita Job Shadow) -->
                 <div class="bento-card">
                     <div class="card-text">
-                        <h3>Solvita Blood and Tissue Bank: Job Shadow</h3>
-                        <p>Collaborated with process and biomedical engineers to analyze the technical workflows behind skin grafting. Gained direct, hands-on exposure to research, development, and continuous improvement within a professional biomedical environment.</p>
+                        <h3>Current Project</h3>
+                        <p>Updated 10/20/2026: Creating manuals that use low cost materials and easy assembly in order to get more hands on learning in impoverished schools. These kits are aimed at giving a visual of physics topics. Stay tuned to see how this project continues with an estimated completion this December.</p>
                     </div>
                 </div>
 <!-- Small Card 2 (Car Audio Project) -->
                 <div class="bento-card">
-                    <!-- Project Image Placeholder -->
                     <div class="card-text">
                         <h3>Custom Car Audio Fabrication</h3>
                         <p>Hands-on mechanical and electrical fabrication project featuring custom trunk amp racks. Designed a clean, non-destructive zero-gauge wiring layout to integrate subwoofers.</p>
                     <div class="card-image">
-                        <img src="car-audio-project.jpeg" alt="Custom Car Audio Trunk Build" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
+                        <!-- CHANGED to object-fit: contain -->
+                        <img src="car-audio-project.jpeg" alt="Custom Car Audio Trunk Build" style="width: 100%; height: 220px; object-fit: contain; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
                     </div>                   
                     </div>
                 </div>
@@ -90,7 +94,9 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
 <div class="btn-container">
     <button class="primary-btn" onclick="showPage('all-projects')">View all projects</button>
 </div>
+</div>
 </section>
+
 <section id="all-projects" class="page hidden">
     <div class="content-container">
         <h2>All Projects Archive</h2>
@@ -105,15 +111,63 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                 <div class="card-text">
                     <h3>Designing a Ferris Wheel</h3>
                     <p>This was a group project where we were tasked with creating our own Ferris wheel which had the ability to rotate. We utilized a laser cutter to create the acrylic side pieces and we soldered a small circuit to create the battery-operated motor. This Ferris wheel won first place.</p>
-                    <img src="" alt="Ferris Wheel" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
+                    <!-- CHANGED to object-fit: contain -->
+                    <img src="FerrisWheel.jpeg" alt="Ferris Wheel" style="width: 100%; height: 220px; object-fit: contain; border-radius: 12px; margin-bottom: 20px; background-color: #EBEBEB;">
                 </div>
             </div>
 
+            <!-- MOVED the Cadillac card inside the bento-grid where it belongs -->
+            <div class="bento-card">
+                <div class="card-text">
+                    <h3>Touch Screen Replacement: 2016 Cadillac Escalade</h3>
+                    <p>Identified and remediated a factory delamination defect within a 2016 Cadillac CUE telemetry module. Executed a non-destructive mechanical teardown of the dashboard to extract the unit, managing delicate internal ribbon cables to replace the failed touch digitizer. Restored full OEM system functionality with upgraded gel-free hardware.</p>
+                </div>
+                
+                <!-- Side-by-Side Image Container -->
+                <div style="display: flex; gap: 15px; margin-top: auto; padding-top: 20px;">
+                    
+                    <!-- Image 1: The Broken Warning Screen -->
+                    <div style="flex: 1; text-align: center;">
+                        <!-- CHANGED to object-fit: contain -->
+                        <img src="cue-warning.jpg" alt="Unresponsive Digitizer Warning" style="width: 100%; height: 180px; object-fit: contain; border-radius: 12px; background-color: #EBEBEB;">
+                        <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Fig 1: Unresponsive OEM Digitizer</p>
+                    </div>
+
+                    <!-- Image 2: The Green Circuit Boards / Teardown -->
+                    <div style="flex: 1; text-align: center;">
+                        <!-- CHANGED to object-fit: contain -->
+                        <img src="cue-circuitboard.jpg" alt="Extracted CUE Motherboard" style="width: 100%; height: 180px; object-fit: contain; border-radius: 12px; background-color: #EBEBEB;">
+                        <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Fig 2: Core Module PCB Extraction</p>
+                    </div>
+
+                </div>
+            </div>
+        <div class="bento-card">
+    <div class="card-text">
+        <h3>Infotainment Center Replacement: 2014 Kia Rio</h3>
+        <p>Executed a comprehensive system integration to replace an OEM infotainment head unit within a 2014 Kia Rio. Soldered wiring harnesses to get seamless communication between aftermarket and factory parts. Successfully completed a non-destructive dashboard teardown and validated full signal integrity across the upgraded audio pathways.</p>
+    </div>
+    
+    <!-- Side-by-Side Image Container -->
+    <div style="display: flex; gap: 15px; margin-top: auto; padding-top: 20px;">
+        
+        <!-- Image 1: The Empty Dash -->
+        <div style="flex: 1; text-align: center;">
+            <img src="kia-dash-teardown.jpg" alt="Empty Dashboard Cavity" style="width: 100%; height: 200px; object-fit: contain; border-radius: 12px; background-color: #EBEBEB;">
+            <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Fig 1: Non-Destructive Teardown & Harness Access</p>
         </div>
+
+        <!-- Image 2: You Holding the Unit -->
+        <div style="flex: 1; text-align: center;">
+            <img src="kia-yield-proof.jpg" alt="Holding OEM Unit with New System Running" style="width: 100%; height: 200px; object-fit: contain; border-radius: 12px; background-color: #EBEBEB;">
+            <p style="font-size: 0.75rem; color: #888; margin-top: 8px;">Fig 2: OEM Hardware Extraction & System Validation</p>
+        </div>
+
+    </div>
+</div>    
+        </div> <!-- This closing div now correctly closes the bento-grid AFTER both cards -->
     </div>
 </section>
-        </div>
-    </section>
 
    <!-- Experience & Skills Page -->
     <section id="experience" class="page hidden">
@@ -137,6 +191,11 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                     <p class="timeline-detail">Pursuing an accelerated 4-year curriculum</p>
                 </div>
                 <div class="timeline-item">
+                    <h4>Animal Care Team Volunteer - Reptiles</h4>
+                    <p>Newport Aquarium (WAVE Foundation) | Oct 2026 - Present</p>
+                    <p class="timeline-detail">Ensure strict adherence to biological safety protocols, standard operating procedures (SOPs), and exhibit guidelines while educating diverse crowds on reptilian conservation.</p>
+                </div>
+                <div class="timeline-item">
                     <h4>Certified Trainer</h4>
                     <p>Raising Cane's | Jan 2026 - Present</p>
                 </div>
@@ -147,7 +206,7 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
                 <div class="timeline-item">
                     <h4>Dayton Regional STEM School</h4>
                     <p>Graduated Class of 2026</p>
-                    <p class="timeline-detail">Completed the Engineering and Chinese academic pathways, and earned 54 College Credit Plus hours through Sinclair Community College and Wright State University.</p>
+                    <p class="timeline-detail">Completed the Engineering and Chinese academic pathways, and earned 44 College Credit Plus hours through Sinclair Community College and Wright State University.</p>
                 </div>
             </div>
 
@@ -175,8 +234,7 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
             <h2>Let's Connect</h2>
             <div class="contact-links">
                 <a href="mailto:eickmanbernard@gmail.com" class="contact-link">Email</a>
-                <a href="www.linkedin.com/in/bernard-eickman" class="contact-link">LinkedIn</a>
-                <a href="#" class="contact-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/bernard-eickman" target="_blank" class="contact-link">LinkedIn</a>
             </div>
         </div>
     </section>
@@ -197,5 +255,9 @@ Hello and welcome to my portfolio. My name is Bernard Eickman, and I am an incom
             selectedPage.classList.add('active');
         }
     </script>
+    <!-- Copyright Footer -->
+    <footer>
+        <p>&copy; 2026 Bernard Eickman. All rights reserved.</p>
+    </footer>
 </body>
 </html>
